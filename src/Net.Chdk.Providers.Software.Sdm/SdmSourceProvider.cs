@@ -1,4 +1,5 @@
-﻿using Net.Chdk.Model.Software;
+﻿using System.Globalization;
+using Net.Chdk.Model.Software;
 using Net.Chdk.Providers.Software.Product;
 
 namespace Net.Chdk.Providers.Software.Sdm
@@ -8,6 +9,11 @@ namespace Net.Chdk.Providers.Software.Sdm
         protected override string ProductName => "SDM";
 
         protected override string GetChannelName(SoftwareProductInfo product)
+        {
+            return null;
+        }
+
+        protected override CultureInfo GetLanguage(SoftwareSourceInfo source)
         {
             return null;
         }
