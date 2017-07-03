@@ -10,7 +10,8 @@ namespace Net.Chdk.Providers.Software.Sdm
         {
         }
 
+        public override string ProductName => "SDM";
+
         protected override string CategoryName => "PS";
-        protected override string ProductName => "SDM";
     }
 }
